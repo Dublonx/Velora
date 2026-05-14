@@ -399,6 +399,7 @@ section {
     font-size: var(--sz-paragraph);
     font-weight: 400;
     color: #222;
+    margin-top: 8px;
 }
 
 .contact-grp {
@@ -450,5 +451,148 @@ footer {
 }
 
 /* tablet */
+@media (max-width: 768px) {
+    /* navbar */
+    .n-links ul {
+        display: none;
+    }
+
+    .n-menu {
+        display: block;
+    }
+
+    .n-menu i {
+        color: #fff;
+    }
+
+    /* sections */
+    section {
+        padding: 60px 0;
+    }
+
+    /* hero */
+    .top-headline {
+        font-size: var(--sz-headline-m);
+    }
+
+    .top-paragraph {
+        font-size: var(--sz-paragraph);
+    }
+
+    /* partnership */
+    .partnership-split {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    /* properties */
+    .properties-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .texts-cta {
+        margin: 0 auto;
+    }
+
+    /* about */
+    .about-split {
+        flex-direction: column-reverse;
+    }
+
+    .a-headline {
+        font-size: var(--sz-headline-m);
+    }
+
+    .a-paragraph {
+        font-size: var(--sz-paragraph);
+    }
+
+    /* contact */
+    .contact-headline {
+        font-size: var(--sz-headline-m);
+    }
+
+    .contact-paragraph {
+        font-size: var(--sz-paragraph);
+    }
+
+    .contact-grp {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
 
 /* mobile */
+@media (max-width: 420px) {
+    /* sections */
+    section {
+        padding: 40px 0;
+    }
+
+    /* hero */
+    .top-headline {
+        font-size: var(--sz-headline-s);
+    }
+
+    .top-paragraph {
+        font-size: var(--sz-paragraph);
+    }
+
+    /* partnership */
+    .split-left {
+        text-align: center;
+    }
+
+    .split-right {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+
+    .r-card {
+        width: 100%;
+    }
+
+    /* properties */
+    .p-images {
+        grid-template-areas: 
+        "a"
+        "b"
+        "c";
+        width: 100%;
+    }
+
+    .text-headline {
+        font-size: var(--sz-headline-s);
+    }
+
+    .texts-paragraph {
+        font-size: var(--sz-paragraph);
+    }
+
+    /* contact */
+    .contact-headline {
+        font-size: var(--sz-headline-s);
+    }
+
+    .contact-paragraph {
+        font-size: var(--sz-paragraph);
+    }
+
+    .contact-grp {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .c-card i {
+        font-size: var(--sz-headline-s);
+    }
+
+    .text-headline {
+        font-size: var(--sz-headline-s);
+    }
+
+    .text-label {
+        font-size: var(--sz-paragraph);
+    }
+}
