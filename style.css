@@ -18,7 +18,7 @@ body {
 /* css variables */
 :root {
     /* colors */
-    --c-navbar: rgba(0, 0, 0, 0.7);
+    --c-navbar: rgba(0, 0, 0, 0.8);
     --c-background: hsl(60, 100%, 100%);
     --c-background-odd: hsl(0, 0%, 88%);
     --c-headline: hsl(0, 0%, 100%);
@@ -453,8 +453,38 @@ footer {
 /* tablet */
 @media (max-width: 768px) {
     /* navbar */
+    .n-logo {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .navbar {
+        position: relative;
+    }
+    
+    .navbar #nav {
+        position: absolute;
+        z-index: 1;
+        top: calc(100% + 16px);
+        left: 0;
+        width: 100%;
+        background-color: var(--c-navbar);
+        border-radius: 32px;
+        visibility: hidden;
+        opacity: 0;
+        transition: .5s ease;
+    }
+    
+    .navbar #nav.active {
+        visibility: visible;
+        opacity: 1;
+    }
+    
     .n-links ul {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem 0;
     }
 
     .n-menu {
