@@ -661,4 +661,8 @@ footer {
     .text-label {
         font-size: var(--sz-paragraph);
     }
+    
+    .footer {
+        font-size: var(--sz-tagline);
+    }
 }
