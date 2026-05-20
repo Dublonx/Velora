@@ -620,7 +620,7 @@ footer {
     }
 
     .text-headline {
-        font-size: var(--sz-headline-s);
+        font-size: var(--sz-headline);
     }
 
     .text-label {
