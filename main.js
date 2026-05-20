@@ -23,3 +23,24 @@ links.forEach(link => {
   menu.className = "fa-solid fa-bars";
  });
 });
+
+// back to top button
+const topCta = document.querySelector('#topCta');
+
+window.addEventListener("scroll", () => {
+ // if else
+ if (window.scrollY > 300) {
+  setTimeout(() => {
+   topCta.classList.add("show");
+  }, 500);
+ } else {
+  topCta.classList.remove("show");
+ }
+});
+
+topCta.addEventListener("click", () => {
+ window.scrollTo({
+  top: 0,
+  behavior: "smooth"
+ });
+});
