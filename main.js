@@ -30,9 +30,7 @@ const topCta = document.querySelector('#topCta');
 window.addEventListener("scroll", () => {
  // if else
  if (window.scrollY > 300) {
-  setTimeout(() => {
-   topCta.classList.add("show");
-  }, 500);
+  topCta.classList.add("show");
  } else {
   topCta.classList.remove("show");
  }
